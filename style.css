@@ -1,0 +1,10 @@
+* {
+	background-color: #AAA;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.menu-element {
+	background-color: #999;
+	display: inline-block;
+	padding: 20px;
+}
