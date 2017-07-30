@@ -1,10 +1,41 @@
 * {
-	background-color: #AAA;
 	font-family: 'Open Sans', sans-serif;
 }
 
-.menu-element {
-	background-color: #999;
+html {
+	height:100%;
+}
+
+body {
+	background-color: #d6d6d6;
+	min-height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+
+.sidebar {
+	position: fixed;
+	background-color: #000033;
 	display: inline-block;
+	min-height: 100%;
+
+}
+
+.menu-element a {
+	display: inline-block;
+	margin: 20px;
 	padding: 20px;
+	color: #9ea7ff;
+	text-decoration: none;
+}
+
+.menu-element a:visited {
+	color: #9ea7ff;
+	text-decoration: none;
+}
+
+.menu-element a:hover, .menu-element a:active, .menu-element a:focus {
+	text-decoration: none;
+	background-color: #9ea7ff;
+	color: #000033;
 }
