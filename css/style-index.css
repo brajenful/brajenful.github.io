@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	background-color: #CCC;
+	background-color: #FFF;
 	min-height: 100%;
 	width: 100%;
 	margin: 0px;
@@ -25,19 +25,20 @@ body {
 	display: inline-block;
 	margin: 20px;
 	padding: 20px;
-	color: #555;
+	color: #313131;
 	text-decoration: none;
 	width: 200px;
 	text-align: center;
+	font-size: 1.3em;
 }
 
 .menu-element a:visited {
-	color: #555;
+	color: #313131;
 	text-decoration: none;
 }
 
 .menu-element a:hover, .menu-element a:active, .menu-element a:focus {
 	text-decoration: none;
-	background-color: #555;
-	color: #CCC;
+	background-color: #313131;
+	color: #FFF;
 }
