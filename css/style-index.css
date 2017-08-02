@@ -1,5 +1,5 @@
 * {
-	font-family: 'Open Sans', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
@@ -19,6 +19,7 @@ body {
 
 .menu-element {
 	text-align: center;
+	font-style: bold;
 }
 
 .menu-element a {
@@ -29,7 +30,8 @@ body {
 	text-decoration: none;
 	width: 200px;
 	text-align: center;
-	font-size: 1.3em;
+	font-size: 1.6em;
+	font-weight: bold;
 }
 
 .menu-element a:visited {
@@ -38,7 +40,5 @@ body {
 }
 
 .menu-element a:hover, .menu-element a:active, .menu-element a:focus {
-	text-decoration: none;
-	background-color: #313131;
-	color: #FFF;
+	text-decoration: underline;
 }
