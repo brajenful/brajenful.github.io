@@ -8,7 +8,7 @@ html {
 
 body {
 	background-color: #FFF;
-	min-height: 100%;
+	height: auto;
 	width: 100%;
 	margin: 0px;
 }
@@ -41,4 +41,9 @@ body {
 
 .menu-element a:hover, .menu-element a:active, .menu-element a:focus {
 	text-decoration: underline;
+}
+
+.menu-element a:focus {
+	outline: none;
+	text-decoration: none;
 }
