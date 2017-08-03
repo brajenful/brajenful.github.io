@@ -22,9 +22,12 @@ $(document).ready(function() {
 	$(".label, .value").hide(0).delay(200).fadeIn();
 	getWeather();
 	$("#update").click(function() {
-		$(".label, .value").fadeOut();
-		$(".label, .value").fadeIn();
-		getWeather();
+		$(".label, .value").fadeOut(function() {
+    		getWeather();
+    		setTimeout(function() {
+    			$(".label, .value").fadeIn();
+    		}, 100);
+		});
     	/*
     	var ref = firebase.database().ref("temp");
     	ref.once("value")
