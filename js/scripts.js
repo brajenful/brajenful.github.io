@@ -13,6 +13,8 @@ function getWeather() {
 		$("#humidity").html(humidity);
 		var last_updated = data.current.last_updated;
 		$("#last_updated").html(last_updated);
+		var localtime = data.location.localtime;
+		$("#localtime").html(localtime);
 	});
 }
 
