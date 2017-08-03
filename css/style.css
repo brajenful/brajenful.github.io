@@ -15,6 +15,7 @@ body {
 
 .container {
 	margin-top: 100px;
+	text-align: center;
 }
 
 .menu-element {
@@ -22,7 +23,8 @@ body {
 	font-style: bold;
 }
 
-.menu-element a {
+.menu-element a,
+.menu-element span {
 	display: inline-block;
 	margin: 20px;
 	padding: 20px;
@@ -34,16 +36,43 @@ body {
 	font-weight: 100;
 }
 
-.menu-element a:visited {
+.menu-element a:visited,
+.menu-element span:visited {
 	color: #313131;
 	text-decoration: none;
 }
 
-.menu-element a:hover, .menu-element a:active, .menu-element a:focus {
+.menu-element a:hover,
+.menu-element a:active,
+.menu-element a:focus,
+.menu-element span:hover,
+.menu-element span:active,
+.menu-element span:focus {
 	text-decoration: underline;
+	cursor: pointer;
 }
 
-.menu-element a:focus {
+.menu-element a:focus,
+.menu-element span:focus {
 	outline: none;
 	text-decoration: none;
+}
+
+.window {
+	display: inline-block;
+	text-align: left;
+	width: 200px;
+	font-weight: 100;
+	font-size: 1.2em;
+	color: #313131;
+}
+
+.window #temperature {
+	display: inline;
+	float: left;
+}
+
+.window #value {
+	display: inline;
+	float: right;
 }

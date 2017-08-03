@@ -47,3 +47,12 @@ body {
 	outline: none;
 	text-decoration: none;
 }
+
+.window {
+	text-align: center;
+}
+
+.window p{
+	color: #313131;
+	display: inline-block;
+}
