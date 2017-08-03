@@ -23,8 +23,8 @@ $(document).ready(function() {
 	getWeather();
 	$("#update").click(function() {
 		$(".label, .value").fadeOut();
-		getWeather();
 		$(".label, .value").fadeIn();
+		getWeather();
     	/*
     	var ref = firebase.database().ref("temp");
     	ref.once("value")
