@@ -19,9 +19,12 @@ function getWeather() {
 }
 
 $(document).ready(function() {
+	$(".label, .value").hide(0).delay(200).fadeIn();
 	getWeather();
 	$("#update").click(function() {
 		getWeather();
+		$(".label, .value").fadeOut();
+		$(".label, .value").fadeIn();
     	/*
     	var ref = firebase.database().ref("temp");
     	ref.once("value")

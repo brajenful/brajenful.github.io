@@ -67,12 +67,17 @@ body {
 	color: #313131;
 }
 
-.window .label {
+.label {
 	display: inline;
 	float: left;
 }
 
-.window .value {
+.value {
 	display: inline;
 	float: right;
+}
+
+.label,
+.value {
+	display: none;
 }
