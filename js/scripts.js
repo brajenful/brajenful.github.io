@@ -1,3 +1,10 @@
 $(document).ready(function() {
-    // all custom jQuery will go here
+    $("#update").click(function() {
+    	var ref = firebase.database().ref("temp");
+    	ref.once("value")
+  			.then(function(snapshot) {
+    			var data = snapshot.val();
+    			$("#value").html(data);
+  			});
+    });
 });
