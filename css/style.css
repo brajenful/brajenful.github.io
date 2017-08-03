@@ -95,6 +95,7 @@ body {
 }
 
 .label,
-.value {
+.value,
+#search input {
 	display: none;
 }		
