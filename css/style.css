@@ -2,6 +2,15 @@
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
+#search input::-webkit-input-placeholder,
+#search input:-ms-input-placeholder,
+#search input:-moz-placeholder,
+#search input::-moz-placeholder {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !important;
+	color: #313131 !important;
+}
+
+
 html {
 	height: 100%;
 }
@@ -20,7 +29,6 @@ body {
 
 .menu-element {
 	text-align: center;
-	font-style: bold;
 }
 
 .menu-element a,
@@ -58,6 +66,15 @@ body {
 	text-decoration: none;
 }
 
+#search input {
+	font-size: 1.1em;
+	border: none;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #313131;
+	font-weight: 100;
+}
+
 .window {
 	display: inline-block;
 	text-align: left;
@@ -80,4 +97,4 @@ body {
 .label,
 .value {
 	display: none;
-}
+}		
