@@ -70,11 +70,12 @@ function updateOnClick() {
     			$(".label, .value").fadeIn();
     		}, 0);
 		});
+	$(".label, .value").hide(0).delay(0).fadeIn();
 }
 
 $(document).ready(function() {
 	getupdate();
-	$(".label, .value, #search input").hide(0).delay(0).fadeIn();
+	$("#search input").hide(0).delay(0).fadeIn();
 	$("#update").click(function() {
 		updateOnClick();
     });
