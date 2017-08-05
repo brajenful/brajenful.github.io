@@ -75,7 +75,6 @@ function updateOnClick() {
 
 $(document).ready(function() {
 	first = 1;
-	$(".label, .value, #search input").hide(0).delay(0).fadeIn();
 	$("#update").click(function() {
 		updateOnClick();
     });
