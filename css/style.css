@@ -2,10 +2,10 @@
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
-#search input::-webkit-input-placeholder,
-#search input:-ms-input-placeholder,
-#search input:-moz-placeholder,
-#search input::-moz-placeholder {
+input::-webkit-input-placeholder,
+input:-ms-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !important;
 	color: #313131 !important;
 }
@@ -69,19 +69,43 @@ body {
 #search input {
 	font-size: 1.1em;
 	border: none;
-	margin-bottom: 30px;
 	text-align: center;
 	color: #313131;
 	font-weight: 100;
 }
 
 .window {
-	display: inline-block;
+	display: none;
 	text-align: left;
 	width: 300px;
 	font-weight: 100;
 	font-size: 1.2em;
 	color: #313131;
+	margin-top: 30px;
+}
+
+.window-result {
+	display: inline-block;
+	text-align: center;
+	width: 100px;
+	font-weight: 100;
+	font-size: 1.2em;
+	color: #313131;
+}
+
+.window-range {
+	display: inline-block;
+	font-weight: 100;
+	color: #313131;
+	margin-top: 20px;
+	width: 200px;
+}
+
+.window-range input {
+	display: inline-block;
+	width: 50px;
+	border: none;
+	font-size: 1.2em;
 }
 
 .label {
@@ -93,9 +117,3 @@ body {
 	display: inline;
 	float: right;
 }
-
-.label,
-.value,
-#search input {
-	display: none;
-}		

@@ -7,6 +7,7 @@ var humidity;
 var last_updated;
 var localtime;
 var weatherAPIXU;
+var first;
 
 function getWeather() {
 	$.getJSON(weatherAPIXU, function(data) {
@@ -73,7 +74,7 @@ function updateOnClick() {
 }
 
 $(document).ready(function() {
-	getupdate();
+	first = 1;
 	$(".label, .value, #search input").hide(0).delay(0).fadeIn();
 	$("#update").click(function() {
 		updateOnClick();
@@ -81,8 +82,18 @@ $(document).ready(function() {
     $("#search input").on('keypress',function (e) {
    		if (e.keyCode == 13) {
    			var value = this.value;
-    		weatherAPIXU = "https://api.apixu.com/v1/current.json?key=595d5646dcb847f8a9e132542170308&q=" + value;
-    		updateOnClick();
+    		if (value != 0) {
+    			weatherAPIXU = "https://api.apixu.com/v1/current.json?key=595d5646dcb847f8a9e132542170308&q=" + value;
+    			if (first == 0) {
+    				updateOnClick();
+    			}
+    			if (first == 1) {
+    				getupdate();
+    				$(".window:hidden").slideDown(400);
+    				$(".window").css("display", "inline-block");
+    				first = 0;
+    			}
+    		}
    		}
 	});
 });
