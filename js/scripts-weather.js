@@ -82,7 +82,7 @@ $(document).ready(function() {
    		if (e.keyCode == 13) {
    			var value = this.value;
     		if (value != 0) {
-    			weatherAPIXU = "https://api.apixu.com/v1/current.json?key=595d5646dcb847f8a9e132542170308&q=" + value;
+    			weatherAPIXU = "http://api.weatherstack.com/current?access_key=f1008d8343d5e48d84fb6235672a63fa&query=" + value;
     			if (first == 0) {
     				updateOnClick();
     			}
