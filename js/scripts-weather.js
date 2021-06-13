@@ -12,10 +12,10 @@ var first;
 function getWeather() {
 	$.getJSON(weatherAPIXU, function(data) {
 		location_name = data.location.name;
-		temp_c = data.current.temp_c;
-		wind_kph = data.current.wind_kph;
+		temp_c = data.current.temperature;
+		wind_kph = data.current.wind_speed;
 		wind_dir = data.current.wind_dir;
-		precip_mm = data.current.precip_mm;
+		precip_mm = data.current.precip;
 		humidity = data.current.humidity;
 		last_updated = data.current.last_updated;
 		localtime = data.location.localtime;
