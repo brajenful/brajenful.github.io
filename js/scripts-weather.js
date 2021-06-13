@@ -37,13 +37,13 @@ function getupdate() {
 	$.getJSON(weatherAPIXU, function(data) {
 		var location_name = data.location.name;
 		$("#location_name").html(location_name);
-		var temp_c = data.current.temp_c;
+		var temp_c = data.current.temperature;
 		$("#temp_c").html(temp_c);
-		var wind_kph = data.current.wind_kph;
+		var wind_kph = data.current.wind_speed;
 		$("#wind_kph").html(wind_kph);
 		var wind_dir = data.current.wind_dir;
 		$("#wind_dir").html(wind_dir);
-		var precip_mm = data.current.precip_mm;
+		var precip_mm = data.current.precip;
 		$("#precip_mm").html(precip_mm);
 		var humidity = data.current.humidity;
 		$("#humidity").html(humidity);
